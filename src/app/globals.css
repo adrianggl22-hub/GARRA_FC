@@ -1,0 +1,202 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-display);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-navy: var(--navy);
+  --color-navy-deep: var(--navy-deep);
+  --color-navy-light: var(--navy-light);
+  --color-gold: var(--gold);
+  --color-gold-light: var(--gold-light);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  --radius: 0.625rem;
+  /* GARRA FC brand palette - deep navy + gold */
+  --navy-deep: #050b1f;
+  --navy: #0a1530;
+  --navy-light: #14224a;
+  --gold: #f5b800;
+  --gold-light: #ffd24a;
+
+  --background: oklch(0.13 0.05 265);
+  --foreground: oklch(0.97 0.01 90);
+  --card: oklch(0.18 0.05 265);
+  --card-foreground: oklch(0.97 0.01 90);
+  --popover: oklch(0.16 0.05 265);
+  --popover-foreground: oklch(0.97 0.01 90);
+  --primary: oklch(0.82 0.16 85);
+  --primary-foreground: oklch(0.13 0.05 265);
+  --secondary: oklch(0.22 0.06 265);
+  --secondary-foreground: oklch(0.97 0.01 90);
+  --muted: oklch(0.22 0.04 265);
+  --muted-foreground: oklch(0.68 0.04 265);
+  --accent: oklch(0.82 0.16 85);
+  --accent-foreground: oklch(0.13 0.05 265);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.28 0.05 265);
+  --input: oklch(0.28 0.05 265);
+  --ring: oklch(0.82 0.16 85);
+  --chart-1: oklch(0.82 0.16 85);
+  --chart-2: oklch(0.65 0.18 250);
+  --chart-3: oklch(0.55 0.12 200);
+  --chart-4: oklch(0.75 0.14 70);
+  --chart-5: oklch(0.85 0.08 90);
+  --sidebar: oklch(0.16 0.05 265);
+  --sidebar-foreground: oklch(0.97 0.01 90);
+  --sidebar-primary: oklch(0.82 0.16 85);
+  --sidebar-primary-foreground: oklch(0.13 0.05 265);
+  --sidebar-accent: oklch(0.22 0.06 265);
+  --sidebar-accent-foreground: oklch(0.97 0.01 90);
+  --sidebar-border: oklch(0.28 0.05 265);
+  --sidebar-ring: oklch(0.82 0.16 85);
+}
+
+.dark {
+  --background: oklch(0.13 0.05 265);
+  --foreground: oklch(0.97 0.01 90);
+  --card: oklch(0.18 0.05 265);
+  --card-foreground: oklch(0.97 0.01 90);
+  --popover: oklch(0.16 0.05 265);
+  --popover-foreground: oklch(0.97 0.01 90);
+  --primary: oklch(0.82 0.16 85);
+  --primary-foreground: oklch(0.13 0.05 265);
+  --secondary: oklch(0.22 0.06 265);
+  --secondary-foreground: oklch(0.97 0.01 90);
+  --muted: oklch(0.22 0.04 265);
+  --muted-foreground: oklch(0.68 0.04 265);
+  --accent: oklch(0.82 0.16 85);
+  --accent-foreground: oklch(0.13 0.05 265);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(0.28 0.05 265);
+  --input: oklch(0.28 0.05 265);
+  --ring: oklch(0.82 0.16 85);
+  --chart-1: oklch(0.82 0.16 85);
+  --chart-2: oklch(0.65 0.18 250);
+  --chart-3: oklch(0.55 0.12 200);
+  --chart-4: oklch(0.75 0.14 70);
+  --chart-5: oklch(0.85 0.08 90);
+  --sidebar: oklch(0.16 0.05 265);
+  --sidebar-foreground: oklch(0.97 0.01 90);
+  --sidebar-primary: oklch(0.82 0.16 85);
+  --sidebar-primary-foreground: oklch(0.13 0.05 265);
+  --sidebar-accent: oklch(0.22 0.06 265);
+  --sidebar-accent-foreground: oklch(0.97 0.01 90);
+  --sidebar-border: oklch(0.28 0.05 265);
+  --sidebar-ring: oklch(0.82 0.16 85);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom utility classes for GARRA FC */
+@utility text-glow-gold {
+  text-shadow: 0 0 20px rgba(245, 184, 0, 0.5), 0 0 40px rgba(245, 184, 0, 0.3);
+}
+
+@utility text-stroke-gold {
+  -webkit-text-stroke: 2px rgba(245, 184, 0, 0.6);
+}
+
+@utility bg-grid {
+  background-image:
+    linear-gradient(rgba(245, 184, 0, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(245, 184, 0, 0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+@utility bg-carbon {
+  background-color: #0a1530;
+  background-image:
+    radial-gradient(circle at 25% 25%, rgba(20, 34, 74, 0.5) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(245, 184, 0, 0.05) 0%, transparent 50%);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #050b1f;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #14224a, #f5b800);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #f5b800, #14224a);
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Marquee animation */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+/* Pulse glow */
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(245, 184, 0, 0.3), 0 0 40px rgba(245, 184, 0, 0.1); }
+  50% { box-shadow: 0 0 30px rgba(245, 184, 0, 0.6), 0 0 60px rgba(245, 184, 0, 0.2); }
+}
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
