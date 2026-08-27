@@ -54,10 +54,10 @@ export const categories: CategoryInfo[] = [
     gender: "Masculino",
     level: "Juvenil",
     ageRange: "13 - 17 años",
-    playerCount: 48,
+    playerCount: 12,
     coach: "Carlos Bolaños",
     description:
-      "La cantera del club. Cinco categorías (Sub-13, Sub-15, Sub-17) donde se forman las futuras estrellas del fútbol costarricense con metodología profesional.",
+      "La cantera del club. Categorías Sub-13, Sub-15 y Sub-17 donde se forman las futuras estrellas del fútbol costarricense con metodología profesional. Estos son los 12 jugadores del plantel Sub-17 actual.",
     color: "#4a7fff",
   },
   {
@@ -104,13 +104,19 @@ export const players: Player[] = [
   { name: "Gabriela Torres", number: 9, position: "Delantera", category: "mayor-femenino", age: 26, goals: 21, matches: 17, nationality: "🇨🇷" },
   { name: "Daniela Rojas", number: 11, position: "Extremo Izquierdo", category: "mayor-femenino", age: 23, goals: 9, matches: 15, nationality: "🇨🇷" },
 
-  // Juvenil Masculino (Sub-17 mostrados)
-  { name: "Mateo Quirós", number: 1, position: "Portero", category: "juvenil-masculino", age: 16, goals: 0, matches: 14, nationality: "🇨🇷" },
-  { name: "Lucas Hidalgo", number: 4, position: "Defensa", category: "juvenil-masculino", age: 17, goals: 1, matches: 15, nationality: "🇨🇷", isCaptain: true },
-  { name: "Sebastián Núñez", number: 8, position: "Mediocentro", category: "juvenil-masculino", age: 16, goals: 4, matches: 15, nationality: "🇨🇷" },
-  { name: "Ian Cordero", number: 10, position: "Media Punta", category: "juvenil-masculino", age: 17, goals: 11, matches: 14, nationality: "🇨🇷" },
-  { name: "Andrés Vindas", number: 9, position: "Delantero", category: "juvenil-masculino", age: 17, goals: 16, matches: 15, nationality: "🇨🇷" },
-  { name: "Felipe Mora", number: 7, position: "Extremo", category: "juvenil-masculino", age: 16, goals: 7, matches: 14, nationality: "🇨🇷" },
+  // Juvenil Masculino (Sub-17)
+  { name: "Dilan Roberto Arce Arroyo", number: 1, position: "Portero", category: "juvenil-masculino", age: 17, goals: 0, matches: 15, nationality: "🇨🇷" },
+  { name: "Gabriel Rodrigo Arias Gutiérrez", number: 2, position: "Lateral Derecho", category: "juvenil-masculino", age: 17, goals: 1, matches: 14, nationality: "🇨🇷" },
+  { name: "Yerik Sibaja Mongr", number: 3, position: "Defensa Central", category: "juvenil-masculino", age: 16, goals: 2, matches: 15, nationality: "🇨🇷" },
+  { name: "Aaron Yohel Brenes Carvajal", number: 4, position: "Defensa Central", category: "juvenil-masculino", age: 17, goals: 1, matches: 15, nationality: "🇨🇷", isCaptain: true },
+  { name: "Paulo Nihat Agüero Morera", number: 5, position: "Lateral Izquierdo", category: "juvenil-masculino", age: 16, goals: 3, matches: 14, nationality: "🇨🇷" },
+  { name: "Dorian Jesús Solano Zumbado", number: 6, position: "Mediocentro Defensivo", category: "juvenil-masculino", age: 17, goals: 2, matches: 15, nationality: "🇨🇷" },
+  { name: "Josua Salazar González", number: 7, position: "Extremo Derecho", category: "juvenil-masculino", age: 16, goals: 5, matches: 14, nationality: "🇨🇷" },
+  { name: "José Daniel Agüero Arias", number: 8, position: "Mediocentro", category: "juvenil-masculino", age: 17, goals: 4, matches: 15, nationality: "🇨🇷" },
+  { name: "Edwin Andrés González Sandí", number: 9, position: "Delantero", category: "juvenil-masculino", age: 17, goals: 12, matches: 15, nationality: "🇨🇷" },
+  { name: "Alexander Daniel Díaz García", number: 10, position: "Media Punta", category: "juvenil-masculino", age: 16, goals: 8, matches: 14, nationality: "🇨🇷" },
+  { name: "Yeiron Fabricio Vargas Sibaja", number: 11, position: "Extremo Izquierdo", category: "juvenil-masculino", age: 17, goals: 6, matches: 15, nationality: "🇨🇷" },
+  { name: "Dilan de los Ángeles Anchía Castillo", number: 12, position: "Portero Suplente", category: "juvenil-masculino", age: 16, goals: 0, matches: 8, nationality: "🇨🇷" },
 
   // Juvenil Femenino (Sub-17 mostradas)
   { name: "Camila Arroyo", number: 1, position: "Portera", category: "juvenil-femenino", age: 16, goals: 0, matches: 12, nationality: "🇨🇷" },
