@@ -31,7 +31,7 @@ export const categories: CategoryInfo[] = [
     playerCount: 26,
     coach: "Adrián Garita",
     description:
-      "El equipo estandarte del club. Compite en la Segunda División de LINAFA con un plantel experimentado que combina jóvenes promesas y jugadores consolidados.",
+      "El equipo estandarte del club. Compite en la Tercera División de LINAFA con un plantel experimentado que combina jóvenes promesas y jugadores consolidados.",
     color: "#f5b800",
   },
   {
@@ -44,7 +44,7 @@ export const categories: CategoryInfo[] = [
     playerCount: 23,
     coach: "Adrián Garita",
     description:
-      "Pioneras del fútbol femenino en el club. Compiten en la Primera División Femenina de LINAFA y representan el orgullo de las guerreras GARRA FC.",
+      "Pioneras del fútbol femenino en Puriscal. Compiten en la Tercera División Femenina de la Unifut y representan el orgullo de las guerreras GARRA FC.",
     color: "#ffd24a",
   },
   {
