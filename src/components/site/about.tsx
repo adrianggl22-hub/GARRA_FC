@@ -80,10 +80,10 @@ export function About() {
                 y Juvenil Femenino.
               </p>
               <p>
-                Ubicados en <span className="text-white font-semibold">San Pablo de
-                Turrubares</span>, en la zona de Puriscal y Turrubares, contamos con
-                instalaciones propias, un cuerpo técnico certificado por LINAFA y la
-                CONCACAF, y una filosofía deportiva que combina <span className="text-white font-semibold">rendimiento
+                Ubicados en <span className="text-white font-semibold">Puriscal</span>, en
+                la zona de Puriscal y Turrubares, contamos con un cuerpo técnico
+                certificado por <span className="text-white font-semibold">FCRF</span>, y
+                una filosofía deportiva que combina <span className="text-white font-semibold">rendimiento
                 competitivo</span> con <span className="text-white font-semibold">formación
                 humana</span>. Creemos que el fútbol es una herramienta transformadora
                 que enseña valores, abre oportunidades y construye comunidad.
