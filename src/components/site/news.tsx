@@ -55,11 +55,19 @@ export function News() {
             className="lg:col-span-7 group"
           >
             <Card className="h-full bg-card/40 backdrop-blur border-border/60 hover:border-gold/40 transition-all overflow-hidden">
-              {/* Featured image placeholder */}
-              <div className="relative h-64 sm:h-80 bg-gradient-to-br from-navy-light via-navy-deep to-[#050b1f] flex items-center justify-center overflow-hidden">
-                <div className="absolute inset-0 bg-grid opacity-20" />
-                <div className="absolute top-0 left-0 w-1/2 h-full bg-gradient-to-r from-gold/10 to-transparent" />
-                <span className="relative text-7xl sm:text-8xl">{featured.emoji}</span>
+              {/* Featured image - real photo with overlay */}
+              <div className="relative h-64 sm:h-80 overflow-hidden">
+                <img
+                  src="/news-featured.jpg"
+                  alt="Jugador de GARRA FC en acción durante un partido"
+                  className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                />
+                {/* Gradient overlay for legibility */}
+                <div className="absolute inset-0 bg-gradient-to-t from-navy-deep via-navy-deep/60 to-navy-deep/20" />
+                <div className="absolute inset-0 bg-gradient-to-r from-navy-deep/70 to-transparent" />
+                {/* Grid texture */}
+                <div className="absolute inset-0 bg-grid opacity-15" />
+
                 <div className="absolute top-4 left-4">
                   <Badge className="bg-gold text-navy-deep uppercase tracking-wider font-bold">
                     Destacado
