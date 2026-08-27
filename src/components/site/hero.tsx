@@ -192,7 +192,7 @@ export function Hero() {
                 </span>
                 <span className="mx-2 text-navy/40">★</span>
                 <span className="mx-6 text-sm font-bold uppercase tracking-wider">
-                  📍 Estadio GARRA · San José, Costa Rica
+                  📍 Sede San Pablo de Turrubares · Costa Rica
                 </span>
                 <span className="mx-2 text-navy/40">★</span>
               </div>

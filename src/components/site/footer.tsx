@@ -1,13 +1,11 @@
 "use client";
 
-import { Instagram, Facebook, Youtube, Twitter, MapPin, Phone, Mail } from "lucide-react";
+import { Instagram, Facebook, MapPin, Phone, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const socials = [
-  { icon: Instagram, label: "Instagram", href: "#", handle: "@garrafc.cr" },
-  { icon: Facebook, label: "Facebook", href: "#", handle: "GARRA FC Costa Rica" },
-  { icon: Youtube, label: "YouTube", href: "#", handle: "GARRA FC TV" },
-  { icon: Twitter, label: "Twitter / X", href: "#", handle: "@garrafc" },
+  { icon: Facebook, label: "Facebook", href: "https://www.facebook.com/GarraFC", handle: "Garra FC" },
+  { icon: Instagram, label: "Instagram", href: "https://www.instagram.com/garrafcoficial", handle: "@garrafcoficial" },
 ];
 
 const quickLinks = [
@@ -60,8 +58,9 @@ export function Footer() {
               </div>
             </div>
             <p className="text-foreground/65 text-sm leading-relaxed mb-6 max-w-md">
-              Club de fútbol costarricense comprometido con la formación integral de
-              futbolistas en categorías juveniles y mayores, en ambas ramas. <span className="text-gold">Garra,
+              Club de fútbol costarricense con sede en San Pablo de Turrubares.
+              Comprometidos con la formación integral de futbolistas en categorías
+              juveniles y mayores, en ambas ramas. <span className="text-gold">Garra,
               corazón y respeto en cada partido.</span>
             </p>
             <div className="flex flex-wrap gap-2">
@@ -135,17 +134,27 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="h-4 w-4 text-gold mt-0.5 shrink-0" />
                 <span className="text-sm text-foreground/70 leading-relaxed">
-                  Estadio GARRA FC<br />
-                  San José, Costa Rica
+                  San Pablo de Turrubares<br />
+                  Puriscal y Turrubares, Costa Rica
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <Clock className="h-4 w-4 text-gold mt-0.5 shrink-0" />
+                <span className="text-sm text-foreground/70 leading-relaxed">
+                  Entrenamientos<br />
+                  Martes y Jueves · 8:00 pm – 9:30 pm
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-4 w-4 text-gold shrink-0" />
-                <span className="text-sm text-foreground/70">+506 4000-4277</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <Mail className="h-4 w-4 text-gold shrink-0" />
-                <span className="text-sm text-foreground/70">info@garrafc.cr</span>
+                <a
+                  href="https://wa.me/50660537767"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-foreground/70 hover:text-gold transition-colors"
+                >
+                  +506 6053 7767
+                </a>
               </li>
             </ul>
 
@@ -162,7 +171,7 @@ export function Footer() {
         <div className="mt-12 pt-6 border-t border-border/30 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-foreground/50 text-center sm:text-left">
             © {new Date().getFullYear()} GARRA FC. Todos los derechos reservados.
-            Hecho con <span className="text-gold">garra</span> en Costa Rica.
+            Encargado del proyecto: <span className="text-gold">Adrián Andrés Garita González</span>.
           </p>
           <div className="flex items-center gap-4 text-xs text-foreground/50">
             <a href="#" className="hover:text-gold transition-colors">Política de Privacidad</a>

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Phone, Mail, MapPin, Send, CheckCircle2, Calendar, User, MessageSquare } from "lucide-react";
+import { Phone, Mail, MapPin, Send, CheckCircle2, Calendar, User, MessageSquare, Clock, Instagram, Facebook } from "lucide-react";
 import { useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -15,20 +15,20 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "Sede del Club",
-    value: "Estadio GARRA FC",
-    sub: "San José, Costa Rica · 200 m norte del Parque",
+    value: "San Pablo de Turrubares",
+    sub: "Puriscal y Turrubares, Costa Rica",
+  },
+  {
+    icon: Clock,
+    label: "Horarios de Entrenamiento",
+    value: "Martes y Jueves · 8:00 pm – 9:30 pm",
+    sub: "Sede San Pablo de Turrubares",
   },
   {
     icon: Phone,
-    label: "Teléfono",
-    value: "+506 4000-4277",
-    sub: "Lun a Vie · 9:00am - 6:00pm",
-  },
-  {
-    icon: Mail,
-    label: "Correo electrónico",
-    value: "info@garrafc.cr",
-    sub: "Atendemos en menos de 24 horas",
+    label: "Teléfono / WhatsApp",
+    value: "+506 6053 7767",
+    sub: "Encargado: Adrián Andrés Garita González",
   },
 ];
 
@@ -38,6 +38,17 @@ const tryoutBenefits = [
   "Acceso a la escuela GARRA para menores de 12 años",
   "Oportunidades de proyección en LINAFA",
 ];
+
+const socialLinks = [
+  { icon: Facebook, label: "Facebook", href: "https://www.facebook.com/GarraFC", handle: "Garra FC" },
+  { icon: Instagram, label: "Instagram", href: "https://www.instagram.com/garrafcoficial", handle: "@garrafcoficial" },
+];
+
+const projectLead = {
+  name: "Adrián Andrés Garita González",
+  role: "Encargado del Proyecto",
+  initials: "AG",
+};
 
 export function Contact() {
   const [submitted, setSubmitted] = useState(false);
@@ -231,9 +242,72 @@ export function Contact() {
                   </div>
                 ))}
               </div>
+
+              {/* Redes sociales */}
+              <div className="mt-5 pt-5 border-t border-border/40">
+                <div className="text-[10px] uppercase tracking-wider text-foreground/50 mb-3">
+                  Síguenos en redes
+                </div>
+                <div className="flex gap-2">
+                  {socialLinks.map((social) => (
+                    <a
+                      key={social.label}
+                      href={social.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-3 py-2 rounded-lg bg-navy-deep/60 border border-border/40 hover:border-gold/40 hover:bg-gold/10 transition-all group"
+                      title={`${social.label} · ${social.handle}`}
+                    >
+                      <social.icon className="h-4 w-4 text-foreground/70 group-hover:text-gold transition-colors" />
+                      <span className="text-xs text-foreground/80 group-hover:text-gold transition-colors">
+                        {social.handle}
+                      </span>
+                    </a>
+                  ))}
+                </div>
+              </div>
             </Card>
 
+            {/* Project lead card */}
             <Card className="bg-gradient-to-br from-gold/15 to-navy-light border-gold/30 p-6">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="relative shrink-0">
+                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-gold to-gold-light flex items-center justify-center border border-gold/40">
+                    <span
+                      className="font-display text-lg font-bold text-navy-deep"
+                      style={{ fontFamily: "var(--font-display)" }}
+                    >
+                      {projectLead.initials}
+                    </span>
+                  </div>
+                </div>
+                <div className="flex-1 min-w-0">
+                  <div className="text-[10px] uppercase tracking-wider text-gold mb-0.5">
+                    Encargado del Proyecto
+                  </div>
+                  <h3
+                    className="font-display text-base font-bold text-white leading-tight"
+                    style={{ fontFamily: "var(--font-display)" }}
+                  >
+                    {projectLead.name}
+                  </h3>
+                  <div className="text-xs text-foreground/70 mt-0.5">
+                    {projectLead.role}
+                  </div>
+                </div>
+              </div>
+              <a
+                href="https://wa.me/50660537767"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 w-full mt-2 px-4 py-2.5 rounded-lg bg-gold text-navy-deep hover:bg-gold-light font-bold text-sm uppercase tracking-wider transition-colors"
+              >
+                <Phone className="h-4 w-4" />
+                Contactar por WhatsApp
+              </a>
+            </Card>
+
+            <Card className="bg-card/40 backdrop-blur border-border/60 p-6">
               <h3
                 className="font-display text-lg font-bold text-gold mb-3"
                 style={{ fontFamily: "var(--font-display)" }}

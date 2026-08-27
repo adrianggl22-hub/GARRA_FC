@@ -189,17 +189,17 @@ export interface Match {
 
 export const matches: Match[] = [
   // Próximos
-  { id: "m1", date: "2026-08-30", time: "16:00", opponent: "AD Guanacasteca", category: "mayor-masculino", venue: "local", stadium: "Estadio GARRA", status: "próximo", isLocal: true },
+  { id: "m1", date: "2026-08-30", time: "16:00", opponent: "AD Guanacasteca", category: "mayor-masculino", venue: "local", stadium: "Sede San Pablo de Turrubares", status: "próximo", isLocal: true },
   { id: "m2", date: "2026-09-03", time: "19:00", opponent: "Sporting FC Femenino", category: "mayor-femenino", venue: "visitante", stadium: "Polideportivo Aranjuez", status: "próximo", isLocal: false },
-  { id: "m3", date: "2026-09-06", time: "15:00", opponent: "CS Uruguay Sub-17", category: "juvenil-masculino", venue: "local", stadium: "Estadio GARRA", status: "próximo", isLocal: true },
-  { id: "m4", date: "2026-09-08", time: "10:00", opponent: "AD Carmelita Femenino", category: "juvenil-femenino", venue: "local", stadium: "Estadio GARRA", status: "próximo", isLocal: true },
+  { id: "m3", date: "2026-09-06", time: "15:00", opponent: "CS Uruguay Sub-17", category: "juvenil-masculino", venue: "local", stadium: "Sede San Pablo de Turrubares", status: "próximo", isLocal: true },
+  { id: "m4", date: "2026-09-08", time: "10:00", opponent: "AD Carmelita Femenino", category: "juvenil-femenino", venue: "local", stadium: "Sede San Pablo de Turrubares", status: "próximo", isLocal: true },
   { id: "m5", date: "2026-09-13", time: "18:30", opponent: "Municipal Pérez Zeledón", category: "mayor-masculino", venue: "visitante", stadium: "Estadio Pérez Zeledón", status: "próximo", isLocal: false },
 
   // Jugados
-  { id: "m6", date: "2026-08-22", time: "16:00", opponent: "AD Cariari", category: "mayor-masculino", venue: "local", stadium: "Estadio GARRA", status: "jugado", result: { home: 3, away: 1 }, isLocal: true },
+  { id: "m6", date: "2026-08-22", time: "16:00", opponent: "AD Cariari", category: "mayor-masculino", venue: "local", stadium: "Sede San Pablo de Turrubares", status: "jugado", result: { home: 3, away: 1 }, isLocal: true },
   { id: "m7", date: "2026-08-18", time: "19:00", opponent: "CE Nofé Femenino", category: "mayor-femenino", venue: "visitante", stadium: "Estadio Nacional", status: "jugado", result: { home: 2, away: 2 }, isLocal: false },
-  { id: "m8", date: "2026-08-15", time: "15:00", opponent: "LD Alajuelense Sub-17", category: "juvenil-masculino", venue: "local", stadium: "Estadio GARRA", status: "jugado", result: { home: 1, away: 0 }, isLocal: true },
-  { id: "m9", date: "2026-08-11", time: "10:00", opponent: "Saprissa FF Sub-17", category: "juvenil-femenino", venue: "local", stadium: "Estadio GARRA", status: "jugado", result: { home: 4, away: 1 }, isLocal: true },
+  { id: "m8", date: "2026-08-15", time: "15:00", opponent: "LD Alajuelense Sub-17", category: "juvenil-masculino", venue: "local", stadium: "Sede San Pablo de Turrubares", status: "jugado", result: { home: 1, away: 0 }, isLocal: true },
+  { id: "m9", date: "2026-08-11", time: "10:00", opponent: "Saprissa FF Sub-17", category: "juvenil-femenino", venue: "local", stadium: "Sede San Pablo de Turrubares", status: "jugado", result: { home: 4, away: 1 }, isLocal: true },
   { id: "m10", date: "2026-08-08", time: "18:30", opponent: "Municipal Grecia", category: "mayor-masculino", venue: "visitante", stadium: "Estadio Allen Riggioni", status: "jugado", result: { home: 2, away: 1 }, isLocal: false },
 ];
 

@@ -80,9 +80,10 @@ export function About() {
                 y Juvenil Femenino.
               </p>
               <p>
-                Ubicados en San José, Costa Rica, contamos con instalaciones propias,
-                un cuerpo técnico certificado por LINAFA y la CONCACAF, y una filosofía
-                deportiva que combina <span className="text-white font-semibold">rendimiento
+                Ubicados en <span className="text-white font-semibold">San Pablo de
+                Turrubares</span>, en la zona de Puriscal y Turrubares, contamos con
+                instalaciones propias, un cuerpo técnico certificado por LINAFA y la
+                CONCACAF, y una filosofía deportiva que combina <span className="text-white font-semibold">rendimiento
                 competitivo</span> con <span className="text-white font-semibold">formación
                 humana</span>. Creemos que el fútbol es una herramienta transformadora
                 que enseña valores, abre oportunidades y construye comunidad.
