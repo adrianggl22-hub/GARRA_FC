@@ -29,7 +29,7 @@ export const categories: CategoryInfo[] = [
     level: "Mayor",
     ageRange: "18+ años",
     playerCount: 26,
-    coach: "Randall Castro",
+    coach: "Adrián Garita",
     description:
       "El equipo estandarte del club. Compite en la Segunda División de LINAFA con un plantel experimentado que combina jóvenes promesas y jugadores consolidados.",
     color: "#f5b800",
@@ -42,7 +42,7 @@ export const categories: CategoryInfo[] = [
     level: "Mayor",
     ageRange: "18+ años",
     playerCount: 23,
-    coach: "María Fernanda Vargas",
+    coach: "Adrián Garita",
     description:
       "Pioneras del fútbol femenino en el club. Compiten en la Primera División Femenina de LINAFA y representan el orgullo de las guerreras GARRA FC.",
     color: "#ffd24a",
@@ -55,7 +55,7 @@ export const categories: CategoryInfo[] = [
     level: "Juvenil",
     ageRange: "13 - 17 años",
     playerCount: 12,
-    coach: "Carlos Bolaños",
+    coach: "Diego Barrantes",
     description:
       "La cantera del club. Categorías Sub-13, Sub-15 y Sub-17 donde se forman las futuras estrellas del fútbol costarricense con metodología profesional. Estos son los 12 jugadores del plantel Sub-17 actual.",
     color: "#4a7fff",
@@ -68,7 +68,7 @@ export const categories: CategoryInfo[] = [
     level: "Juvenil",
     ageRange: "13 - 17 años",
     playerCount: 35,
-    coach: "Alejandra Rojas",
+    coach: "Adrián Garita",
     description:
       "Formación íntegra de las futbolistas del mañana. Tres categorías en crecimiento que apuntan a alimentar el equipo mayor femenino y la selección nacional.",
     color: "#ff6ec7",
@@ -131,52 +131,60 @@ export interface Coach {
   name: string;
   role: string;
   category: string;
-  experience: string;
   initials: string;
+  license?: string;
+  summary?: string;
+  teams?: { name: string; achievement?: string }[];
+  seminars?: { name: string; instructor?: string }[];
 }
 
 export const coaches: Coach[] = [
   {
-    name: "Randall Castro",
+    name: "Adrián Andrés Garita González",
     role: "Director Técnico",
-    category: "Mayor Masculino",
-    experience: "15 años de experiencia. Ex LINAFA y ASODELI.",
-    initials: "RC",
+    category: "Mayor Masculino · Mayor Femenino · Juvenil Femenino",
+    initials: "AG",
+    license: "Licencia B",
+    summary:
+      "12 años dirigiendo diversos proyectos deportivos en Tercera División Región 8 Linafa, con experiencia en fútbol masculino, femenino y academia infantil. Encargado del proyecto GARRA FC y responsable deportivo de tres de las cuatro categorías del club.",
+    teams: [
+      { name: "Rodeo FC" },
+      { name: "Piedras Negras FC" },
+      { name: "Turrubares FC" },
+      {
+        name: "Garra FC",
+        achievement: "Academia de fútbol infantil · Escuela Rogelio Fernández Guell",
+      },
+      {
+        name: "Merengue FC",
+        achievement: "Campeón 3° División 2019 · Linafa Región 8",
+      },
+      {
+        name: "ADIMUP",
+        achievement: "Campeón 3° División 2023 · Linafa Región 8",
+      },
+      {
+        name: "ADIMUP Femenino",
+        achievement: "Subcampeón 3° División · Torneo Unifut 2025",
+      },
+    ],
+    seminars: [
+      {
+        name: "Valores en el deporte",
+        instructor: "Jorge Yarce",
+      },
+    ],
   },
   {
-    name: "María Fernanda Vargas",
-    role: "Directora Técnica",
-    category: "Mayor Femenino",
-    experience: "10 años formando futbolistas. Uncaf Pro Licence.",
-    initials: "MF",
-  },
-  {
-    name: "Carlos Bolaños",
-    role: "Coordinador de Fuerzas Básicas",
+    name: "Diego Barrantes Mora",
+    role: "Director Técnico",
     category: "Juvenil Masculino",
-    experience: "12 años en canteras. Licencia CONCACAF B.",
-    initials: "CB",
-  },
-  {
-    name: "Alejandra Rojas",
-    role: "Directora Técnica",
-    category: "Juvenil Femenino",
-    experience: "8 años promoviendo fútbol femenino juvenil.",
-    initials: "AR",
-  },
-  {
-    name: "Marco Tulio Vindas",
-    role: "Preparador Físico",
-    category: "Todas las categorías",
-    experience: "Especialista en rendimiento deportivo, MSc.",
-    initials: "MT",
-  },
-  {
-    name: "Dra. Pamela Solano",
-    role: "Cuerpo Médico",
-    category: "Departamento Médico",
-    experience: "Médica colegiada. Especialista en deportes.",
-    initials: "PS",
+    initials: "DB",
+    license: "Licencia B",
+    summary:
+      "Encargado de la categoría Juvenil Masculino del club. Responsable de la formación, desarrollo y proyección de los jugadores Sub-13, Sub-15 y Sub-17, con foco en trabajo táctico, técnico y formativo.",
+    teams: [],
+    seminars: [],
   },
 ];
 
