@@ -314,7 +314,7 @@ export const standings: StandingRow[] = [
 
 export const clubStats = [
   { label: "Año de fundación", value: "2024", suffix: "" },
-  { label: "Categorías activas", value: "12", suffix: "" },
-  { label: "Jugadores inscritos", value: "132", suffix: "" },
-  { label: "Títulos juveniles", value: "3", suffix: "" },
+  { label: "Categorías activas", value: "4", suffix: "" },
+  { label: "Jugadores inscritos", value: "50", suffix: "" },
+  { label: "Títulos juveniles", value: "0", suffix: "" },
 ];
