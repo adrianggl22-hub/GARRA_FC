@@ -290,17 +290,6 @@ export const news: NewsItem[] = [
   },
 ];
 
-export const sponsors: string[] = [
-  "Deportivos CR",
-  "Gimnasio Tigre",
-  "Pollo Mangión",
-  "Lubricantes UNIÓN",
-  "Bodega La Farola",
-  "Constructora Sol Naciente",
-  "Hotel Verde Luna",
-  "Ferretería El Tornillo",
-];
-
 export interface StandingRow {
   position: number;
   team: string;
