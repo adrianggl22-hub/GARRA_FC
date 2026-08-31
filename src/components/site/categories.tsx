@@ -5,11 +5,11 @@ import { Users, MapPin, User, ArrowRight } from "lucide-react";
 import { categories, type Category } from "./data";
 import { Button } from "@/components/ui/button";
 
-const categoryMeta: Record<Category, { emoji: string; gradient: string }> = {
-  "mayor-masculino": { emoji: "🦁", gradient: "from-[#f5b800]/30 to-transparent" },
-  "mayor-femenino": { emoji: "👑", gradient: "from-[#ffd24a]/30 to-transparent" },
-  "juvenil-masculino": { emoji: "⚡", gradient: "from-[#4a7fff]/30 to-transparent" },
-  "juvenil-femenino": { emoji: "🌟", gradient: "from-[#ff6ec7]/30 to-transparent" },
+const categoryMeta: Record<Category, { gradient: string }> = {
+  "mayor-masculino": { gradient: "from-[#f5b800]/30 to-transparent" },
+  "mayor-femenino": { gradient: "from-[#ffd24a]/30 to-transparent" },
+  "juvenil-masculino": { gradient: "from-[#4a7fff]/30 to-transparent" },
+  "juvenil-femenino": { gradient: "from-[#ff6ec7]/30 to-transparent" },
 };
 
 export function Categories() {
@@ -74,7 +74,6 @@ export function Categories() {
                   {/* Header */}
                   <div className="flex items-start justify-between mb-6">
                     <div>
-                      <div className="text-4xl mb-3">{meta.emoji}</div>
                       <div className="flex items-center gap-2 mb-2">
                         <span
                           className="px-2 py-0.5 text-[10px] uppercase tracking-wider rounded font-bold"
