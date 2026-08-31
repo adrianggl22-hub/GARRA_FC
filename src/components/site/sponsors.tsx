@@ -7,13 +7,13 @@ const sponsors = [
   {
     name: "NEXUM",
     logo: "/sponsor-nexum.png",
-    description: "Seguridad y biometría digital",
+    description: "Soporte técnico, desarrollo web, ciberseguridad y más",
     href: "https://marvelous-fudge-323f27.netlify.app/#",
   },
   {
     name: "TEAMTEC",
     logo: "/sponsor-teamtec.png",
-    description: "Soluciones tecnológicas",
+    description: "Soporte técnico, desarrollo web, ciberseguridad y más",
     href: "https://teamtec.se/",
   },
 ];
