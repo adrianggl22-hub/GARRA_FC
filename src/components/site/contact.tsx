@@ -34,7 +34,6 @@ const contactInfo = [
 
 const tryoutBenefits = [
   "Evaluación por cuerpo técnico certificado",
-  "Posible beca deportiva para talento destacado",
   "Acceso a la escuela GARRA para menores de 12 años",
   "Oportunidades de proyección en LINAFA",
 ];
