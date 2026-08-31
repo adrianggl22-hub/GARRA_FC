@@ -64,11 +64,13 @@ export function Sponsors() {
 
               {/* Logo */}
               <div className="relative w-full h-24 sm:h-28 flex items-center justify-center">
-                <img
-                  src={sponsor.logo}
-                  alt={`Logo de ${sponsor.name}`}
-                  className="max-h-full max-w-full object-contain transition-transform group-hover:scale-105"
-                />
+                <div className="w-full h-full rounded-xl bg-white p-3 flex items-center justify-center shadow-lg">
+                  <img
+                    src={sponsor.logo}
+                    alt={`Logo de ${sponsor.name}`}
+                    className="max-h-full max-w-full object-contain transition-transform group-hover:scale-105"
+                  />
+                </div>
               </div>
 
               {/* Info */}
