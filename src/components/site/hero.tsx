@@ -184,17 +184,17 @@ export function Hero() {
             .map((_, i) => (
               <div key={i} className="flex items-center">
                 <span className="mx-6 text-sm font-bold uppercase tracking-wider">
-                  ⚽ Próximo partido: GARRA FC vs AD Guanacasteca · 30 Ago · 4:00pm
+                  Próximo partido: GARRA FC vs AD Guanacasteca · 30 Ago · 4:00pm
                 </span>
-                <span className="mx-2 text-navy/40">★</span>
+                <span className="mx-2 text-navy/40">·</span>
                 <span className="mx-6 text-sm font-bold uppercase tracking-wider">
-                  🏆 Temporada 2026 · En juego
+                  Temporada 2026 · En juego
                 </span>
-                <span className="mx-2 text-navy/40">★</span>
+                <span className="mx-2 text-navy/40">·</span>
                 <span className="mx-6 text-sm font-bold uppercase tracking-wider">
-                  📍 Sede San Pablo de Turrubares · Costa Rica
+                  Sede San Pablo de Turrubares · Costa Rica
                 </span>
-                <span className="mx-2 text-navy/40">★</span>
+                <span className="mx-2 text-navy/40">·</span>
               </div>
             ))}
         </div>
