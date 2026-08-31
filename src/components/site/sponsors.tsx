@@ -8,13 +8,13 @@ const sponsors = [
     name: "NEXUM",
     logo: "/sponsor-nexum.png",
     description: "Seguridad y biometría digital",
-    href: "#",
+    href: "https://marvelous-fudge-323f27.netlify.app/#",
   },
   {
     name: "TEAMTEC",
     logo: "/sponsor-teamtec.png",
     description: "Soluciones tecnológicas",
-    href: "#",
+    href: "https://teamtec.se/",
   },
 ];
 
@@ -50,6 +50,8 @@ export function Sponsors() {
             <motion.a
               key={sponsor.name}
               href={sponsor.href}
+              target="_blank"
+              rel="noopener noreferrer"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
