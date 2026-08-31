@@ -40,7 +40,7 @@ const tryoutBenefits = [
 
 const socialLinks = [
   { icon: Facebook, label: "Facebook", href: "https://www.facebook.com/share/1B82pmf1HF/", handle: "Garra FC" },
-  { icon: Instagram, label: "Instagram", href: "https://www.instagram.com/garrafcoficial", handle: "@garrafcoficial" },
+  { icon: Instagram, label: "Instagram", href: "https://www.instagram.com/garra_fc_2026?igsi=eG0yeHI0bmUweTFm", handle: "@garra_fc_2026" },
 ];
 
 const projectLead = {
