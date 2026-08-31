@@ -41,7 +41,7 @@ export const categories: CategoryInfo[] = [
     gender: "Femenino",
     level: "Mayor",
     ageRange: "18+ años",
-    playerCount: 23,
+    playerCount: 13,
     coach: "Adrián Garita",
     description:
       "Pioneras del fútbol femenino en Puriscal. Compiten en la Tercera División Femenina de la Unifut y representan el orgullo de las guerreras GARRA FC.",
@@ -97,12 +97,19 @@ export const players: Player[] = [
   { name: "Esteban Chaves", number: 7, position: "Extremo Derecho", category: "mayor-masculino", age: 22, goals: 8, matches: 17, nationality: "🇨🇷" },
 
   // Mayor Femenino
-  { name: "Valeria Méndez", number: 1, position: "Portera", category: "mayor-femenino", age: 25, goals: 0, matches: 16, nationality: "🇨🇷" },
-  { name: "Carolina Picado", number: 5, position: "Defensa Central", category: "mayor-femenino", age: 28, goals: 2, matches: 17, nationality: "🇨🇷", isCaptain: true },
-  { name: "Sofía Umaña", number: 8, position: "Mediocentro", category: "mayor-femenino", age: 24, goals: 6, matches: 17, nationality: "🇨🇷" },
-  { name: "Mariana Viquez", number: 10, position: "Media Punta", category: "mayor-femenino", age: 22, goals: 14, matches: 16, nationality: "🇨🇷" },
-  { name: "Gabriela Torres", number: 9, position: "Delantera", category: "mayor-femenino", age: 26, goals: 21, matches: 17, nationality: "🇨🇷" },
-  { name: "Daniela Rojas", number: 11, position: "Extremo Izquierdo", category: "mayor-femenino", age: 23, goals: 9, matches: 15, nationality: "🇨🇷" },
+  { name: "Ariana Alejandra Barrantes Solórzano", number: 1, position: "Portera", category: "mayor-femenino", age: 22, goals: 0, matches: 12, nationality: "🇨🇷" },
+  { name: "Valeria María León Bermúdez", number: 12, position: "Portera", category: "mayor-femenino", age: 21, goals: 0, matches: 8, nationality: "🇨🇷" },
+  { name: "Elizabeth Valeria Nuñez Madrigal", number: 8, position: "Centrocampista", category: "mayor-femenino", age: 23, goals: 3, matches: 14, nationality: "🇨🇷" },
+  { name: "Joselyn Azofeifa Vargas", number: 6, position: "Volante", category: "mayor-femenino", age: 24, goals: 2, matches: 13, nationality: "🇨🇷" },
+  { name: "Viviana María Alpízar Corrales", number: 5, position: "Centrocampista", category: "mayor-femenino", age: 25, goals: 4, matches: 15, nationality: "🇨🇷", isCaptain: true },
+  { name: "Michelle Paola Alpízar Sánchez", number: 7, position: "Centrocampista", category: "mayor-femenino", age: 22, goals: 5, matches: 14, nationality: "🇨🇷" },
+  { name: "Hellen Hayda Vindas Sabat", number: 4, position: "Defensa", category: "mayor-femenino", age: 26, goals: 1, matches: 15, nationality: "🇨🇷" },
+  { name: "Fátima Campos Porras", number: 14, position: "Volante", category: "mayor-femenino", age: 20, goals: 3, matches: 12, nationality: "🇨🇷" },
+  { name: "María Angélica Barboza Murillo", number: 3, position: "Defensa", category: "mayor-femenino", age: 24, goals: 0, matches: 13, nationality: "🇨🇷" },
+  { name: "Mónica Ariela Montero Mena", number: 2, position: "Defensa", category: "mayor-femenino", age: 23, goals: 1, matches: 14, nationality: "🇨🇷" },
+  { name: "Zulangie Chaves Salazar", number: 16, position: "Volante", category: "mayor-femenino", age: 21, goals: 4, matches: 13, nationality: "🇨🇷" },
+  { name: "Sofía Vega Chavarría", number: 15, position: "Volante", category: "mayor-femenino", age: 19, goals: 6, matches: 12, nationality: "🇨🇷" },
+  { name: "Kataline Chuprine Sisfontes", number: 10, position: "Centrocampista", category: "mayor-femenino", age: 24, goals: 9, matches: 15, nationality: "🇨🇷" },
 
   // Juvenil Masculino (Sub-17)
   { name: "Dilan Roberto Arce Arroyo", number: 1, position: "Portero", category: "juvenil-masculino", age: 17, goals: 0, matches: 15, nationality: "🇨🇷" },
