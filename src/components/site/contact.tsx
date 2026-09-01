@@ -33,9 +33,9 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Correo electrónico",
-    value: "adrian@teamtec.co.cr",
+    value: "adrian@teamtec.se",
     sub: "Escríbenos, atendemos en menos de 24 horas",
-    href: "mailto:adrian@teamtec.co.cr",
+    href: "mailto:adrian@teamtec.se",
   },
 ];
 
