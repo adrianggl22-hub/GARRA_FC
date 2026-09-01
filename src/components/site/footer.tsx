@@ -1,6 +1,6 @@
 "use client";
 
-import { Instagram, Facebook, MapPin, Phone, Clock } from "lucide-react";
+import { Instagram, Facebook, MapPin, Phone, Clock, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const socials = [
@@ -154,6 +154,15 @@ export function Footer() {
                   className="text-sm text-foreground/70 hover:text-gold transition-colors"
                 >
                   +506 6053 7767
+                </a>
+              </li>
+              <li className="flex items-center gap-3">
+                <Mail className="h-4 w-4 text-gold shrink-0" />
+                <a
+                  href="mailto:adrian@teamtec.co.cr"
+                  className="text-sm text-foreground/70 hover:text-gold transition-colors break-all"
+                >
+                  adrian@teamtec.co.cr
                 </a>
               </li>
             </ul>

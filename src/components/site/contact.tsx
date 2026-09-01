@@ -30,6 +30,13 @@ const contactInfo = [
     value: "+506 6053 7767",
     sub: "Encargado: Adrián Andrés Garita González",
   },
+  {
+    icon: Mail,
+    label: "Correo electrónico",
+    value: "adrian@teamtec.co.cr",
+    sub: "Escríbenos, atendemos en menos de 24 horas",
+    href: "mailto:adrian@teamtec.co.cr",
+  },
 ];
 
 const tryoutBenefits = [
@@ -235,7 +242,16 @@ export function Contact() {
                       <div className="text-[10px] uppercase tracking-wider text-foreground/50">
                         {info.label}
                       </div>
-                      <div className="text-white font-semibold">{info.value}</div>
+                      {info.href ? (
+                        <a
+                          href={info.href}
+                          className="text-white font-semibold hover:text-gold transition-colors break-all"
+                        >
+                          {info.value}
+                        </a>
+                      ) : (
+                        <div className="text-white font-semibold">{info.value}</div>
+                      )}
                       <div className="text-xs text-foreground/60 mt-0.5">{info.sub}</div>
                     </div>
                   </div>
