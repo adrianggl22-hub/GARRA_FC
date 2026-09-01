@@ -58,13 +58,45 @@ const projectLead = {
 
 export function Contact() {
   const [submitted, setSubmitted] = useState(false);
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    category: "",
+    message: "",
+  });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    // Construir el mailto con todos los datos del formulario
+    const to = "adrian@teamtec.se";
+    const subject = `Nuevo mensaje desde el sitio web GARRA FC - ${form.category || "Consulta general"}`;
+    const body = `Hola, soy ${form.name}.
+
+Categoría de interés: ${form.category || "No especificada"}
+Teléfono de contacto: ${form.phone || "No proporcionado"}
+Correo: ${form.email}
+
+Mensaje:
+${form.message}
+
+---
+Enviado desde el formulario de contacto del sitio web GARRA FC.`;
+
+    const mailtoUrl = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    // Abrir el cliente de correo del usuario
+    window.location.href = mailtoUrl;
+
+    // Mostrar mensaje de éxito
     setSubmitted(true);
-    toast.success("¡Mensaje enviado!", {
-      description: "Te contactaremos en menos de 24 horas. ¡Pura vida!",
+    toast.success("Abriendo tu cliente de correo...", {
+      description: "Si no se abre automáticamente, escríbenos a adrian@teamtec.se",
     });
+  };
+
+  const updateField = (field: string, value: string) => {
+    setForm((prev) => ({ ...prev, [field]: value }));
   };
 
   return (
@@ -139,6 +171,8 @@ export function Contact() {
                         id="name"
                         placeholder="Tu nombre"
                         required
+                        value={form.name}
+                        onChange={(e) => updateField("name", e.target.value)}
                         className="bg-navy-deep/60 border-border/60 focus:border-gold"
                       />
                     </div>
@@ -152,6 +186,8 @@ export function Contact() {
                         type="email"
                         placeholder="tucorreo@ejemplo.com"
                         required
+                        value={form.email}
+                        onChange={(e) => updateField("email", e.target.value)}
                         className="bg-navy-deep/60 border-border/60 focus:border-gold"
                       />
                     </div>
@@ -166,6 +202,8 @@ export function Contact() {
                       <Input
                         id="phone"
                         placeholder="+506 8888-8888"
+                        value={form.phone}
+                        onChange={(e) => updateField("phone", e.target.value)}
                         className="bg-navy-deep/60 border-border/60 focus:border-gold"
                       />
                     </div>
@@ -174,17 +212,20 @@ export function Contact() {
                         <Calendar className="h-3.5 w-3.5" />
                         Categoría de interés
                       </Label>
-                      <Select>
+                      <Select
+                        value={form.category}
+                        onValueChange={(value) => updateField("category", value)}
+                      >
                         <SelectTrigger className="bg-navy-deep/60 border-border/60 focus:border-gold">
                           <SelectValue placeholder="Selecciona una categoría" />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="mayor-masculino">Mayor Masculino</SelectItem>
-                          <SelectItem value="mayor-femenino">Mayor Femenino</SelectItem>
-                          <SelectItem value="juvenil-masculino">Juvenil Masculino (13-17)</SelectItem>
-                          <SelectItem value="juvenil-femenino">Juvenil Femenino (13-17)</SelectItem>
-                          <SelectItem value="escuela">Escuela GARRA (5-12)</SelectItem>
-                          <SelectItem value="otro">Otra consulta</SelectItem>
+                          <SelectItem value="Mayor Masculino">Mayor Masculino</SelectItem>
+                          <SelectItem value="Mayor Femenino">Mayor Femenino</SelectItem>
+                          <SelectItem value="Juvenil Masculino (13-17)">Juvenil Masculino (13-17)</SelectItem>
+                          <SelectItem value="Juvenil Femenino (13-17)">Juvenil Femenino (13-17)</SelectItem>
+                          <SelectItem value="Escuela GARRA (5-12)">Escuela GARRA (5-12)</SelectItem>
+                          <SelectItem value="Otra consulta">Otra consulta</SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
@@ -200,8 +241,17 @@ export function Contact() {
                       rows={4}
                       placeholder="Cuéntanos sobre tu experiencia, edad, posición y por qué quieres unirte a GARRA FC..."
                       required
+                      value={form.message}
+                      onChange={(e) => updateField("message", e.target.value)}
                       className="bg-navy-deep/60 border-border/60 focus:border-gold resize-none"
                     />
+                  </div>
+
+                  <div className="flex items-center gap-3 text-xs text-foreground/60">
+                    <Mail className="h-3.5 w-3.5 text-gold shrink-0" />
+                    <span>
+                      Tu mensaje se enviará a <span className="text-gold font-semibold">adrian@teamtec.se</span> a través de tu cliente de correo.
+                    </span>
                   </div>
 
                   <Button
